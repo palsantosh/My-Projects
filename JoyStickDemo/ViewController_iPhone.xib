@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="btnBack" destination="4IF-bX-Jwb" id="ZDn-6c-VBJ"/>
+                <outlet property="btnConnected" destination="8tY-IM-KRS" id="fFS-uS-a3i"/>
+                <outlet property="lblPercent" destination="f8z-Yi-dWS" id="BVz-Nm-1ZV"/>
+                <outlet property="slider" destination="gGZ-Dl-1CU" id="rrP-M2-ylJ"/>
+                <outlet property="view" destination="6" id="7"/>
+                <outlet property="viewBackground" destination="p2f-Oy-2VX" id="BXm-Uk-x8u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" id="p2f-Oy-2VX">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" misplaced="YES" id="L4M-YY-5z9">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" id="8" customClass="JoyStickView">
+                    <rect key="frame" x="40" y="205" width="128" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="stick_base.png" id="10">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="unnamed.png" id="9">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <connections>
+                        <outlet property="stickView" destination="9" id="12"/>
+                        <outlet property="stickViewBase" destination="10" id="11"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" id="fAw-3Q-qzI">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="60"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zcL-tA-p0r">
+                            <rect key="frame" x="211" y="18" width="245" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Novus Robot">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="23" name="KohinoorBangla-Light"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8tY-IM-KRS">
+                            <rect key="frame" x="620" y="12" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="uncheck-2.png"/>
+                            <state key="selected" image="chk.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4IF-bX-Jwb">
+                            <rect key="frame" x="17" y="11" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="back.png"/>
+                            <state key="selected" image="chk.png"/>
+                            <connections>
+                                <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="jK9-NV-kZo"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" misplaced="YES" id="3Pk-Vo-5nQ">
+                            <rect key="frame" x="273" y="43" width="120" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="gGZ-Dl-1CU">
+                    <rect key="frame" x="492" y="172" width="190" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
+                    <color key="minimumTrackTintColor" red="0.23526731044483173" green="0.8410986075129534" blue="0.47411084823283944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeSlider:" destination="-1" eventType="valueChanged" id="Fzr-AP-wl9"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8z-Yi-dWS">
+                    <rect key="frame" x="611" y="125" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pole" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ff-hL-Bpz">
+                    <rect key="frame" x="565" y="348" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.72782129669999995" blue="0.31267009779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stand.png" id="3Iu-OP-729">
+                    <rect key="frame" x="398" y="297" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TeB-vG-EKo">
+                    <rect key="frame" x="344" y="342" width="72" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <state key="normal" title="Retract">
+                        <color key="titleColor" red="1" green="0.3868451960872088" blue="0.39321773660673465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FwB-gL-iJv">
+                    <rect key="frame" x="424" y="342" width="72" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <state key="normal" title="Deploy">
+                        <color key="titleColor" red="0.23526731040000001" green="0.84109860749999998" blue="0.47411084819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tvs-aP-N12">
+                    <rect key="frame" x="62" y="348" width="83" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.72782129669999995" blue="0.31267009779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-772.5" y="-18.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="48" height="48"/>
+        <image name="chk.png" width="60" height="60"/>
+        <image name="stand.png" width="48" height="48"/>
+        <image name="stick_base.png" width="128" height="128"/>
+        <image name="uncheck-2.png" width="60" height="60"/>
+        <image name="unnamed.png" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
